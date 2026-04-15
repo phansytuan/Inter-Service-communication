@@ -1,0 +1,4 @@
+com/demo/product/service/ProductService.class
+com/demo/product/ProductServiceApplication.class
+com/demo/product/controller/ProductController.class
+com/demo/product/dto/ProductDTO.class

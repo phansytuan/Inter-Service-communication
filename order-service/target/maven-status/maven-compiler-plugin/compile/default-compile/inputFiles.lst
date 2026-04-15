@@ -1,0 +1,6 @@
+/home/tuandev/java-projects/microservices-demo/order-service/src/main/java/com/demo/order/client/ProductClient.java
+/home/tuandev/java-projects/microservices-demo/order-service/src/main/java/com/demo/order/controller/OrderController.java
+/home/tuandev/java-projects/microservices-demo/order-service/src/main/java/com/demo/order/dto/OrderDTO.java
+/home/tuandev/java-projects/microservices-demo/order-service/src/main/java/com/demo/order/dto/ProductDTO.java
+/home/tuandev/java-projects/microservices-demo/order-service/src/main/java/com/demo/order/OrderServiceApplication.java
+/home/tuandev/java-projects/microservices-demo/order-service/src/main/java/com/demo/order/service/OrderService.java
