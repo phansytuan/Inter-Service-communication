@@ -1,11 +1,15 @@
 package com.demo.order.dto;
 
 public class OrderDTO {
+
     private Long orderId;
     private String customerName;
     private String status;
     private int quantity;
     private ProductDTO product;   // enriched from Product Service
+
+
+
 
     public OrderDTO() {}
 

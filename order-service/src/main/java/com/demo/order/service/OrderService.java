@@ -41,9 +41,10 @@ public class OrderService {
     }
 
     /**
-     * Fetch an order by ID and enrich it with product data fetched from Product Service.
+     * Fetch an order by ID & enrich it with product data fetched from <- Product Service.
      */
     public Optional<OrderDTO> getOrderWithProduct(Long orderId) {
+
         OrderDTO order = ORDER_META.get(orderId);
         if (order == null) return Optional.empty();
 
@@ -53,11 +54,15 @@ public class OrderService {
             log.info("Order Service → calling Product Service for productId={}", productId);
             ProductDTO product = productClient.getProductById(productId);
             order.setProduct(product);
+
             log.info("Product Service responded: {}", product.getName());
+
         } catch (FeignException.NotFound e) {
             log.warn("Product {} not found in Product Service", productId);
+
         } catch (Exception e) {
             log.error("Failed to reach Product Service: {}", e.getMessage());
+
             // Graceful degradation — return order without product details
         }
 

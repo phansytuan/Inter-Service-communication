@@ -23,6 +23,7 @@ public class OrderController {
      */
     @GetMapping("/{id}")
     public ResponseEntity<OrderDTO> getOrder(@PathVariable Long id) {
+
         return orderService.getOrderWithProduct(id)
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());

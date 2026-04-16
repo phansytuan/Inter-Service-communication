@@ -15,6 +15,9 @@
 │       ▼                                                      │
 │    JSON response                                             │
 └──────────────────────────────────────────────────────────────┘
+
+──▶ 2 service giao tiếp với nhau bằng cách gọi HTTP đến URL của nhau, giống hệt cách bạn dùng fetch() hay curl. 
+Feign chỉ là công cụ giúp viết ít code hơn.
 ```
 
 ---

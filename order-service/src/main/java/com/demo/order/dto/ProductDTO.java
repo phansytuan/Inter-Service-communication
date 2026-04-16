@@ -1,12 +1,16 @@
 package com.demo.order.dto;
 
 public class ProductDTO {
+
     private Long id;
     private String name;
     private String category;
     private double price;
     private int stock;
     private String description;
+
+
+
 
     public ProductDTO() {}
 
