@@ -16,5 +16,6 @@ public interface ProductClient {
 
     @GetMapping("/products/{id}")
     ProductDTO getProductById(@PathVariable("id") Long id);
+
     // GET http://localhost:8081/products/3
 }

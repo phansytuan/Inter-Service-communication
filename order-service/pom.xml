@@ -19,7 +19,7 @@
 
     <properties>
         <java.version>17</java.version>
-        <spring-cloud.version>2023.0.0</spring-cloud.version>
+        <spring-cloud.version>2023.0.0</spring-cloud.version> <!--Set Version here-->
     </properties>
 
     <dependencies>
@@ -44,7 +44,7 @@
 
     <dependencyManagement>
         <dependencies>
-            <dependency>
+            <dependency> <!-- For Service Discovery, Sleuth, OpenFeign... -->
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
                 <version>${spring-cloud.version}</version>
